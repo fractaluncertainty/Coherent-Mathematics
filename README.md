@@ -21,6 +21,10 @@ https://www.amazon.com/Coherent-Mathematics-Observation-Mathematical-Structure/d
 
 https://github.com/fractaluncertainty/Fractal-Uncertainty-Theory/
 
+## 🔗 Related Work: Fractal Uncertainty Theory (FUT)
+CoMath is the mathematical foundation for **[FUT](https://github.com/fractaluncertainty/Fractal-Uncertainty-Theory/)**, which applies coherence to **spacetime geometry**. Together, they redefine infinity, numbers, and physics through fractal dynamics.
+- 🌌 [Explore FUT →](https://github.com/fractaluncertainty/Fractal-Uncertainty-Theory/)
+
 
 References
 
