@@ -19,6 +19,12 @@ https://www.amazon.com/Fractal-Uncertainty-Theory-Quarks-Cosmic/dp/3982868106/
 
 https://www.amazon.com/Coherent-Mathematics-Observation-Mathematical-Structure/dp/3982868114/
 
+
+https://leanpub.com/fractaluncertaintytheory
+
+https://leanpub.com/coherentmathematics
+
+
 https://github.com/fractaluncertainty/Fractal-Uncertainty-Theory/
 
 ## 🔗 Related Work: Fractal Uncertainty Theory (FUT)
