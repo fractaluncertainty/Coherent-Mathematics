@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Coherent Mathematics: Numerical Experiments S0-S12"
+type: software
+authors:
+  - family-names: Deutschmann
+    given-names: Jens
+year: 2026
+date-released: 2026-07-22
+license: MIT
+repository-code: "https://github.com/fractaluncertainty/Coherent-Mathematics"
+url: "https://github.com/fractaluncertainty/Coherent-Mathematics"
+abstract: >-
+  Reference implementations and exploratory numerical experiments accompanying
+  the development of CoMath (Coherent Mathematics), covering recoherence,
+  persistent identity, emergent networks, proto-geometry, coupling-functional
+  ablation, geometry classification, and exploratory stabilization tests.
+keywords:
+  - coherent mathematics
+  - recoherence
+  - emergence
+  - proto-geometry
+  - numerical experiment
+  - complex systems
+

@@ -1,89 +1,78 @@
-# Coherent-Mathematics (CoMath)
-A framework redefining numbers as equivalence classes of view-vectors in R⊗F space, with coherence Cₙ measuring stability. Unifies arithmetic, primes, and the Riemann zeta function through fractal resonance (π, φ).
+# Coherent Mathematics — Numerical Experiments
 
-Coherent Mathematics (CoMath)
-CoMath is a mathematical theory that defines numbers as equivalence classes of view-vectors and introduces coherence as a measure of stability.
-Files
+Reference implementations and reproducible numerical experiments accompanying the development of **CoMath (Coherent Mathematics)** by Jens Deutschmann.
 
-extended_resonance_for_Cn.py: Computes the coherence CnC_nCn​ for natural numbers.
-Installation
+CoMath studies how stable mathematical structure may emerge from recursive openness, continuation, compatibility, persistence, and recoherence. This repository contains the exploratory simulation sequence **S0–S12**, developed to test whether specific qualitative mechanisms can occur in explicit computational toy models.
 
-Python 3.x
-Required libraries: math
-Usage
-Run the Python script to calculate coherence for natural numbers.
+> [!IMPORTANT]
+> These programs are numerical experiments, not proofs of the CoMath ontology or derivations of physical constants. A positive simulation result establishes only that the implemented mechanism can produce the reported behavior under the stated assumptions and parameters.
 
+## Repository contents
 
-Links:
-https://www.amazon.com/Fractal-Uncertainty-Theory-Quarks-Cosmic/dp/3982868106/
+| Series | Main question | Principal output |
+|---|---|---|
+| S0 | Can local compatibility and recoherence yield stable clusters? | Baseline dynamics and proto-metric |
+| S1 | How can the baseline dynamics be inspected visually? | State, cluster, history, and distance plots |
+| S2 | Does structure persist across thresholds? | Threshold hierarchy |
+| S3 | Is the hierarchy robust across random seeds? | Multi-seed statistics |
+| S4 | Can clusters retain temporal identity? | Identity tracks and lifetimes |
+| S5 | Can retained history stabilize identity? | Memory-dependent persistence |
+| S6 | Can persistent identities form coupled networks? | Components, degrees, and edges |
+| S7 | Can those networks induce a proto-geometry? | Direct and geodesic distance structures |
+| S8 | How dependent is the geometry on the chosen coupling functional \(J\)? | Ablation and candidate comparison |
+| S9 | Which candidate geometries satisfy the declared criteria? | Classifier and minimal-\(J\) analysis |
+| S10 | Does the selected dynamics stabilize under an \(L_\infty\)-style test? | Spectral and trajectory diagnostics |
+| S11 | What happens in an exploratory feedback comparison involving \(\alpha_{\rm em}\)? | Bifurcation and precision plots |
+| S12 | Are the reported bifurcation features robust across \(R_f\) variants? | Universality sweep and error heatmap |
 
-https://www.amazon.com/Coherent-Mathematics-Observation-Mathematical-Structure/dp/3982868114/
+The complete experiment-to-manuscript map is in [`docs/comath_v8_mapping.md`](docs/comath_v8_mapping.md). Methodological limits are documented in [`docs/scientific_status.md`](docs/scientific_status.md).
 
+## Installation
 
-https://leanpub.com/fractaluncertaintytheory
+Python 3.10 or newer is recommended.
 
-https://leanpub.com/coherentmathematics
+```bash
+git clone https://github.com/fractaluncertainty/Coherent-Mathematics.git
+cd Coherent-Mathematics
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
 
+## Running the experiments
 
-https://github.com/fractaluncertainty/Fractal-Uncertainty-Theory/
+Run scripts from the repository root. Most early scripts use fixed seeds and create their own output directories relative to the current working directory.
 
-## 🔗 Related Work: Fractal Uncertainty Theory (FUT)
-CoMath is the mathematical foundation for **[FUT](https://github.com/fractaluncertainty/Fractal-Uncertainty-Theory/)**, which applies coherence to **spacetime geometry**. Together, they redefine infinity, numbers, and physics through fractal dynamics.
-- 🌌 [Explore FUT →](https://github.com/fractaluncertainty/Fractal-Uncertainty-Theory/)
+```bash
+python experiments/s0_recoherence_simulation_full.py
+python experiments/s1_recoherence_visualization.py
+python experiments/s9_recoherence_geometry_classifier.py --help
+```
 
+Some later experiments are computationally heavier because they perform multi-seed or parameter sweeps. Begin with the S0 baseline or use the S9 classifier's command-line options to reduce the number of runs.
 
-References
+Reference outputs produced during development are retained under [`results/reference/`](results/reference/). Newly generated result directories are ignored by Git unless deliberately added.
 
-J. Deutschmann, “Resolving Schrödinger's Cat Paradox via Fractal Uncertainty Theory” Zenodo, Feb. 2026. 
-DOI: https://doi.org/10.5281/zenodo.18640202
+## Reproducibility
 
-J. Deutschmann, “Approach to the Yang-Mills Mass Gap Problem via Fractal Uncertainty Theory” Zenodo, Feb. 2026. 
-DOI: https://doi.org/10.5281/zenodo.18640361
+- Random seeds are set explicitly in the experiment series.
+- Source files are syntax-checked in the test suite.
+- Published reference CSV and image outputs are kept separate from source code.
+- The repository records the minimal runtime dependencies.
+- No external data or network access is required to execute the experiments.
 
-J. Deutschmann, “How Fractal Uncertainty Theory Derives 0, 1, and i from Interference” Zenodo, Feb. 2026. 
-DOI: https://doi.org/10.5281/zenodo.18723637
+See [`docs/reproducibility.md`](docs/reproducibility.md) for the recommended verification sequence and known limitations.
 
-J. Deutschmann, “Fractal Uncertainty Theory (FUT) - Version 5” Zenodo, Feb. 2026. 
-DOI: https://doi.org/10.5281/zenodo.18724416
+## Citation
 
-J. Deutschmann, “Dark Energy and Dark Matter as View-Vector Phenomena - V5” Zenodo, Feb. 2026. 
-DOI: https://doi.org/10.5281/zenodo.18729882
+If you use this code, cite the repository using [`CITATION.cff`](CITATION.cff). A release DOI can be added after the first archived GitHub/Zenodo release.
 
-J. Deutschmann, “The Cosmic Web as View-Vector Geometry - V5” Zenodo, Feb. 2026. 
-DOI: https://doi.org/10.5281/zenodo.18730057
+## Authorship and implementation history
 
-J. Deutschmann, “Das Quark-Periodensystem — FUT V8” Zenodo, März 2026.
-DOI: https://doi.org/10.5281/zenodo.19113273
+The CoMath framework, experiment design, interpretation, and publication responsibility belong to **Jens Deutschmann**. Individual scripts were developed with implementation assistance from generative AI systems, including Claude and OpenAI models. Such assistance is disclosed in source headers and [`NOTICE.md`](NOTICE.md); all scientific claims and responsibility remain with the human author.
 
-J. Deutschmann, “The Origin of Quark Generations - V8” Zenodo, März 2026. 
-DOI: https://doi.org/10.5281/zenodo.19113466
+## License
 
-J. Deutschmann, “Fractal Uncertainty Theory · Molekülphysik” Zenodo, März 2026.
-DOI: https://doi.org/10.5281/zenodo.19113867
-
-J. Deutschmann, “Coherent Mathematics (coMath): Meta-Axiom-System 1.1,” Zenodo, März 2026. 
-DOI: https://doi.org/10.5281/zenodo.19146370
-
-J. Deutschmann, “VIT: View-Vector-Isolations-Test – Primzahltest aus co-Math,” Zenodo, März 2026. 
-DOI: https://doi.org/10.5281/zenodo.19146972
-
-[J. Deutschmann, “The Riemann Hypothesis: A Proof via Coherent Mathematics and Multi-Scale View-Vector Networks” Zenodo, März 2026  
-DOI: https://doi.org/10.5281/zenodo.19147388
-
-J. Deutschmann, “Global Regularity of Navier-Stokes Equations in the Fractal Uncertainty Theory Framework” Zenodo, März 2026. 
-DOI: https://doi.org/10.5281/zenodo.19205537
-
-J. Deutschmann, “The Birch and Swinnerton-Dyer Conjecture: A Proof via Coherent Mathematics and Elliptic View-Vector Networks” Zenodo, März 2026. 
-DOI: https://doi.org/10.5281/zenodo.19205676
-
-J. Deutschmann, “P̸=NP via Categorical Self-Reference Separation” Zenodo, April 2026. 
-DOI: https://doi.org/10.5281/zenodo.19457199
-
-J. Deutschmann, “The Hodge Conjecture Resolved” Zenodo, April 2026. 
-DOI: https://doi.org/10.5281/zenodo.19457199
-
-J. Deutschmann, “A Coherence-Based Approach to the Continuum Problem” Zenodo, April 2026. 
-DOI: https://doi.org/10.5281/zenodo.19709889
-
-
+Code and repository documentation are released under the [MIT License](LICENSE). The CoMath books, manuscripts, terminology, figures, and theory are not relicensed by this repository unless explicitly stated.
 
