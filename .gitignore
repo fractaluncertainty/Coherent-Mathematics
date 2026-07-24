@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+
+# Generated outputs
+s0_output/
+s1_outputs/
+s2_outputs/
+s3_outputs/
+s4_outputs/
+s5_outputs/
+s6_outputs/
+s7_outputs/
+s8_outputs/
+s8_1_outputs/
+s9_outputs/
+s10_output/
+s11_output/
+s12_output/
