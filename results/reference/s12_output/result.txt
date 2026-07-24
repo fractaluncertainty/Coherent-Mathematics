@@ -1,0 +1,48 @@
+user@debian:~/Downloads$ python3 s12_rf_bifurcation_universality.py 
+
+========================================================================
+S12 — R/F-Bifurkationsuniversality
+========================================================================
+N=12, seeds=20, steps=500, theta_c=0.35
+alphas=14, betas=7, J=['linf_exp', 'power', 'metric_exp']
+
+J = linf_exp
+  beta=0.00: stable_horizon  4/14
+  beta=0.05: stable_horizon  5/14
+  beta=0.10: stable_horizon  5/14
+  beta=0.25: stable_horizon  5/14
+  beta=0.50: stable_horizon  5/14
+  beta=1.00: stable_horizon  5/14
+  beta=2.00: stable_horizon  6/14
+
+J = power
+  beta=0.00: stable_horizon  4/14
+  beta=0.05: stable_horizon  5/14
+  beta=0.10: stable_horizon  5/14
+  beta=0.25: stable_horizon  5/14
+  beta=0.50: stable_horizon  5/14
+  beta=1.00: stable_horizon  5/14
+  beta=2.00: stable_horizon  6/14
+
+J = metric_exp
+  beta=0.00: stable_horizon  4/14
+  beta=0.05: stable_horizon  5/14
+  beta=0.10: stable_horizon  5/14
+  beta=0.25: stable_horizon  5/14
+  beta=0.50: stable_horizon  5/14
+  beta=1.00: stable_horizon  5/14
+  beta=2.00: stable_horizon  6/14
+
+CSV: s12_output/s12_rf_bifurcation_universality.csv
+PNG: s12_output/s12_a_bifurcation_curves.png
+PNG: s12_output/s12_b_error_heatmap.png
+PNG: s12_output/s12_c_ico_vs_alpha.png
+Report: s12_output/s12_report.md
+
+========================================================================
+S12 ABGESCHLOSSEN
+Ausgaben in: s12_output/
+========================================================================
+user@debian:~/Downloads$ 
+
+
