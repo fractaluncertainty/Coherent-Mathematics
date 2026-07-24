@@ -64,6 +64,27 @@ Reference outputs produced during development are retained under [`results/refer
 
 See [`docs/reproducibility.md`](docs/reproducibility.md) for the recommended verification sequence and known limitations.
 
+## Books and Publications
+
+The computational work in this repository accompanies a broader research
+program developed in the following books by Jens Deutschmann:
+
+- [Coherent Mathematics: From Incomplete Self-Continuation to Mathematical Structure](https://www.amazon.com/dp/B0H4QHDNLP)  
+  CoMath V7, paperback, published June 2026.
+
+- [Fractal Uncertainty Theory: From Space and Time to Quarks to the Cosmic Web](https://www.amazon.com/dp/B0H238NLC9)  
+  Paperback, published May 2026.
+
+- [Solving and Proofing the Six Remaining Millennium Problems: From Physical Observation to Mathematical Structure](https://www.amazon.com/dp/3982868130)  
+  Paperback, published May 2026.
+
+- [Coherent Mathematics V4: From Physical Observation to Higher Mathematical Structure](https://www.amazon.com/dp/3982868114)  
+  Paperback, published April 2026.
+
+The books present the conceptual and mathematical development. This repository
+provides open source code, numerical experiments, reference results, and
+reproducibility documentation.
+
 ## Citation
 
 If you use this code, cite the repository using [`CITATION.cff`](CITATION.cff). A release DOI can be added after the first archived GitHub/Zenodo release.
